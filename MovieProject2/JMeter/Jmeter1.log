@@ -1,0 +1,501 @@
+2013/10/18 10:14:16 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Loading user properties from: C:\Users\Hyoung\Downloads\apache-jmeter-2.9\apache-jmeter-2.9\bin\user.properties 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Loading system properties from: C:\Users\Hyoung\Downloads\apache-jmeter-2.9\apache-jmeter-2.9\bin\system.properties 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Copyright (c) 1998-2013 The Apache Software Foundation 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Version 2.9 r1437961 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: java.version=1.7.0_07 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: os.name=Windows 7 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: os.arch=amd64 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: os.version=6.1 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: JMeterHome=C:\Users\Hyoung\Downloads\apache-jmeter-2.9\apache-jmeter-2.9 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: user.dir  =C:\Users\Hyoung\workspace\MovieProject\JMeter 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: PWD       =C:\Users\Hyoung\workspace\MovieProject\JMeter 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: IP: 192.168.0.112 Name: PC20167 FullName: PC20167.catalystsolves.com 
+2013/10/18 10:14:17 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2013/10/18 10:14:21 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2013/10/18 10:14:21 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2013/10/18 10:14:23 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform] 
+2013/10/18 10:14:23 INFO  - jmeter.JMeter: Loading file: Jmeter1.jmx 
+2013/10/18 10:14:23 INFO  - jmeter.services.FileServer: Default base='C:\Users\Hyoung\workspace\MovieProject\JMeter' 
+2013/10/18 10:14:23 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Hyoung\workspace\MovieProject\JMeter' 
+2013/10/18 10:14:24 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2013/10/18 10:14:24 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2013/10/18 10:14:24 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1427507 
+2013/10/18 10:14:24 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.4 
+2013/10/18 10:14:24 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2013/10/18 10:14:25 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2013/10/18 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Reuse SSL session context on subsequent iterations: true 
+2013/10/18 10:14:26 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2013/10/18 10:14:27 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Hyoung\workspace\MovieProject\JMeter' 
+2013/10/18 10:14:29 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2013/10/18 10:14:29 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2013/10/18 10:14:29 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2013/10/18 10:14:29 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2013/10/18 10:14:30 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
+2013/10/18 10:34:45 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2013/10/18 10:34:45 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2013/10/18 10:34:45 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:34:45 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:34:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:34:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:34:46 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:34:46 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:34:46 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2013/10/18 10:34:46 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2013/10/18 10:34:46 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:34:46 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:34:46 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:34:46 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = PC20167 
+2013/10/18 10:34:46 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 1 
+2013/10/18 10:34:47 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: Setting up HTTPS TrustAll scheme 
+2013/10/18 10:34:47 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2013/10/18 10:34:47 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2013/10/18 10:34:47 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:34:47 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:34:47 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:35:17 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:35:17 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:35:17 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:35:17 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:35:17 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:35:17 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:35:17 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:35:33 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:35:33 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:35:33 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:35:33 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:35:33 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:35:33 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:35:33 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 10:37:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:37:21 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:37:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:37:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:37:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:37:21 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:37:21 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:37:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:37:21 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:37:22 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:37:22 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:37:22 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:50:53 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:50:53 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:50:53 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:50:53 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:50:53 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:50:53 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:50:53 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 10:51:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 10:51:25 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 10:51:25 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 10:51:25 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 10:51:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 10:51:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 10:51:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:13:34 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:13:34 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:13:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:13:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:13:35 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:13:35 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:13:35 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:13:35 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:13:35 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:13:35 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:13:35 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:13:35 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:14:30 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:14:30 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:14:30 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:14:30 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:14:30 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:14:30 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:14:30 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:14:46 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:14:46 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:14:46 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:14:46 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:14:46 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:14:46 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:14:46 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:16:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:16:29 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:16:29 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:16:29 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:16:29 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:16:29 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:16:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:17:01 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:17:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:17:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:17:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:17:02 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:17:02 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:17:02 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:17:02 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:17:02 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:17:02 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:17:02 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:17:02 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:17:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:17:29 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:17:29 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:17:29 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:17:29 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:17:29 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:17:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:17:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:17:52 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:17:52 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:17:52 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:17:52 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:17:52 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:17:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:19:02 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:19:02 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:19:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:19:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:19:02 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:19:02 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:19:02 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:19:02 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:19:02 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:19:04 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:19:04 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:19:04 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:19:24 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:19:24 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:19:24 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:19:24 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:19:24 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:19:24 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:19:24 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 11:37:18 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 11:37:18 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 11:37:19 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 11:37:19 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 11:37:19 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 11:37:19 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 11:37:19 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 11:37:19 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 11:37:19 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 11:37:19 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 11:37:19 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 11:37:19 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:01:38 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:01:38 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:01:38 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:01:38 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:01:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:01:38 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:01:38 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:02:51 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:02:51 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:02:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:02:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:02:51 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:02:51 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:02:51 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:02:51 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:02:51 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:02:52 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:02:52 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:02:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:03:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:03:14 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:03:14 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:03:14 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:03:14 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:03:14 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:03:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:09:39 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:09:39 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:09:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:09:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:09:40 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:09:40 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:09:40 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:09:40 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:09:40 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:09:40 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:09:40 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:09:40 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:10:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:10:14 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:10:14 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:10:14 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:10:14 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:10:14 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:10:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:11:16 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:11:16 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:11:16 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:11:16 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:11:16 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:11:16 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:11:16 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:12:16 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:12:16 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:12:16 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:12:16 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:12:16 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:12:16 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:12:16 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:14:53 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:14:53 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:14:53 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:14:53 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:14:53 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:14:53 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:14:53 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:15:28 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:15:28 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:15:28 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:15:28 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:15:28 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:15:28 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:15:28 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:40:15 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:40:15 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:40:15 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:40:15 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:40:15 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:40:15 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:40:15 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:41:05 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:41:05 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:41:05 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:41:05 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:41:05 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:41:05 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:41:05 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:41:05 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:41:05 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:41:06 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:41:06 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:41:06 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:54:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:54:21 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:54:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:54:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:54:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:54:21 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:54:21 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:54:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:54:21 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:54:22 INFO  - org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$4: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable: connect 
+2013/10/18 12:54:22 INFO  - org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$4: Retrying connect 
+2013/10/18 12:54:24 INFO  - org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$4: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable: connect 
+2013/10/18 12:54:24 INFO  - org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$4: Retrying connect 
+2013/10/18 12:54:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:54:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:54:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:54:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:54:52 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:54:52 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:54:52 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:54:52 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:54:52 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:54:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:55:36 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:55:36 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:55:36 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:55:36 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:55:36 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:55:36 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 12:59:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 12:59:21 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 12:59:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 12:59:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 12:59:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 12:59:21 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 12:59:21 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 12:59:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 12:59:21 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 12:59:22 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 12:59:22 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 12:59:22 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:29:01 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:29:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:29:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:29:02 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:29:02 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:29:02 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:29:02 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:29:02 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:29:02 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:29:02 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:29:02 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:29:02 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:29:59 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:29:59 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:29:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:29:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:29:59 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:29:59 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:29:59 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:29:59 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:29:59 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:30:00 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:30:00 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:30:00 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:30:43 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:30:43 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:30:43 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:30:43 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:30:43 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:30:43 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:30:43 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:32:54 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:32:54 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:32:54 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:32:54 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:32:54 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:32:54 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:32:54 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:32:54 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:32:54 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:32:55 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:32:55 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:32:55 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:57:36 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:57:36 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:57:37 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:57:37 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:57:37 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:57:37 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:57:37 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:57:37 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:57:37 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:57:37 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:57:37 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:57:37 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/10/18 13:58:09 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Nature Journal Thread 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Nature Journal Thread. 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/10/18 13:58:09 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2013/10/18 13:58:09 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/10/18 13:58:09 INFO  - jmeter.threads.JMeterThread: Thread started: Nature Journal Thread 1-1 
+2013/10/18 13:58:09 INFO  - jmeter.threads.JMeterThread: Thread finished: Nature Journal Thread 1-1 
+2013/10/18 13:58:09 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/10/18 13:58:09 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
