@@ -6,9 +6,18 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
+
+
+@NamedQueries({
+	@NamedQuery(name = "getAllLists", query = " SELECT m FROM MovieList m WHERE m.userId =:userId")
+	
+})
+
 
 @Entity
 @Component

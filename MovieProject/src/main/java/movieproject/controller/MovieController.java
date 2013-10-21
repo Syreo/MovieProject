@@ -24,10 +24,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MovieController {
 
 	@Autowired
-	private MovieLists movieList;
+	private MovieLists movieLists;
 	
 	@Autowired
 	private MovieEntries movieEntries;
+	
+	
+	
+	
 	
 	@RequestMapping(value = "/CreateList", produces = "application/json", method = RequestMethod.POST)
 	@ResponseBody
@@ -37,7 +41,7 @@ public class MovieController {
 		String listName = request.getParameter("listName");
 	
 
-		return movieList.createList(userId, listName, request);
+		return movieLists.createList(userId, listName, request);
 	}
 	
 	
@@ -52,4 +56,20 @@ public class MovieController {
 		return movieEntries.addMovieEntry(listId, movieName, imdbId, request);
 	}
 	
+	
+	@RequestMapping(value = "/RetrieveMovieList", produces = "application/json", method = RequestMethod.GET)
+	@ResponseBody
+	public Response retrieveMovie(final HttpServletRequest request){
+		
+		String listId = request.getParameter("listId");
+		return movieLists.retrieveMovieList(listId, request);
+	}
+	
+	@RequestMapping(value = "/RetrieveAllLists", produces = "application/json", method = RequestMethod.GET)
+	@ResponseBody
+	public Response getAllLists(final HttpServletRequest request){
+		
+		String userId = request.getParameter("userId");
+		return movieLists.getAllLists(userId);
+	}
 }

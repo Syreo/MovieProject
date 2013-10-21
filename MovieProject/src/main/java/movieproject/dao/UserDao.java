@@ -23,7 +23,7 @@ public class UserDao {
 
 	private ResponseFactory responseFactory = new ResponseFactory();
 	
-	@PersistenceContext(unitName = "NatureJournalPU")
+	@PersistenceContext(unitName = "MovieProjectPU")
 	private EntityManager em;
 	
 	/**
@@ -113,4 +113,6 @@ public class UserDao {
 		
 		return (String) query.getSingleResult();
 	}
+	
+	
 }

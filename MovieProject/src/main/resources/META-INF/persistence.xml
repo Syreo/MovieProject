@@ -15,7 +15,7 @@
 <!-- 			<property name="hibernate.connection.url" value="jdbc:mysql://pc20167:3306/movie_project" /> -->
 			<property name="hibernate.connection.username" value="root" />
 			<property name="hibernate.connection.password" value="password" />
-			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.hbm2ddl.auto" value="verify" />
 		</properties>
 
 	</persistence-unit>

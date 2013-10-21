@@ -299,7 +299,7 @@
 </dependency>
 	</dependencies>
 	<build>
-		<finalName>NatureJournal</finalName>
+		<finalName>MovieProject</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

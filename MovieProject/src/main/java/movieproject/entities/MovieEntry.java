@@ -10,6 +10,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -18,6 +20,12 @@ import org.springframework.stereotype.Component;
  * @author hyoung
  *
  */
+
+@NamedQueries({
+	@NamedQuery(name = "getMovieListById", query = " SELECT m FROM MovieEntry m WHERE m.listId =:listId")
+	
+})
+
 @Entity
 @Component
 @Table(name = "movie_entry")
