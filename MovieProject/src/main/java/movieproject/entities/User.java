@@ -23,6 +23,7 @@ import org.springframework.stereotype.Component;
 	@NamedQuery(name = "findByUserName", query = " SELECT u FROM User u WHERE u.userName= :userName"),
 	@NamedQuery(name = "findByUserId", query = " SELECT u FROM User u WHERE u.userId= :userId"),
 	@NamedQuery(name = "findAllUsers", query = " SELECT u FROM User u"),
+	
 
 	
 })

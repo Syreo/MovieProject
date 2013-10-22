@@ -12,14 +12,19 @@ import javax.servlet.http.HttpSession;
 
 
 
+
+
+
 import movieproject.dao.UserDao;
 import movieproject.entities.User;
 import movieproject.helpers.Login;
 import movieproject.helpers.Registration;
+import movieproject.helpers.UserProfile;
 import movieproject.response.Response;
 import movieproject.utilities.ResponseFactory;
 
 import org.hibernate.Hibernate;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -49,6 +54,9 @@ public class UserController {
 
 	@Autowired
 	private Login login;
+	
+	@Autowired
+	private UserProfile userProfile;
 
 	private ResponseFactory responseFactory = new ResponseFactory();
 
@@ -85,6 +93,30 @@ public class UserController {
 		String password = request.getParameter("password");
 		return register.createUser(firstName, lastName, userName, email,
 				password, request);
+	}
+	
+	@RequestMapping(value = "/CreateProfile", produces = "application/json", method = RequestMethod.POST)
+	@ResponseBody
+	public Response createProfile(final HttpServletRequest request){
+		String userId = request.getParameter("userId");
+		String displayName = request.getParameter("displayName");
+		String userBio = request.getParameter("userBio");
+		String birthDate = request.getParameter("birthDate");
+		String top5Movies = request.getParameter("top5Movies");
+		
+		return userProfile.createProfile(userId, displayName, userBio, birthDate, top5Movies);
+	}
+	
+	@RequestMapping(value = "/UpdateProfile", produces = "application/json", method = RequestMethod.POST)
+	@ResponseBody
+	public Response updateProfile(final HttpServletRequest request){
+		String userId = request.getParameter("userId");
+		String displayName = request.getParameter("displayName");
+		String userBio = request.getParameter("userBio");
+		String birthDate = request.getParameter("birthDate");
+		String top5Movies = request.getParameter("top5Movies");
+		
+		return userProfile.updateProfile(userId, displayName, userBio, birthDate, top5Movies);
 	}
 	/**
 	 * 

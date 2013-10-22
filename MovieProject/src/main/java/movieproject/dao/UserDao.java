@@ -7,8 +7,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import movieproject.entities.Profile;
 import movieproject.entities.User;
 import movieproject.response.Response;
+import movieproject.utilities.ProfileFactory;
 import movieproject.utilities.ResponseFactory;
 
 import org.springframework.stereotype.Component;
@@ -22,7 +24,8 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserDao {
 
 	private ResponseFactory responseFactory = new ResponseFactory();
-	
+	private ProfileFactory pFactory = new ProfileFactory();
+	private static final String SUCCESS = "SUCCESS";
 	@PersistenceContext(unitName = "MovieProjectPU")
 	private EntityManager em;
 	
@@ -51,8 +54,16 @@ public class UserDao {
 		em.merge(user);
 	}
 	
+	@Transactional
+	public void persistProfile(Profile profile){
+	em.persist(profile);
+		
+	}
 	
-
+	@Transactional
+	public void updateProfile(Profile profile){
+		em.merge(profile);
+	}
 	
 	
 	@Transactional
@@ -94,6 +105,17 @@ public class UserDao {
 
 	}
 	
+	@Transactional
+	public Profile findProfileByUserId(long userId){
+		
+		Profile profile = pFactory.getProfile();
+		Query query = em.createNamedQuery("findProfileByUserId");
+		query.setParameter("userId", userId);
+		
+		profile = (Profile) query.getSingleResult();
+		return profile;
+	}
+	
 	/**
 	 * Gets a list of all users in the database
 	 */
@@ -114,5 +136,6 @@ public class UserDao {
 		return (String) query.getSingleResult();
 	}
 	
+
 	
 }
