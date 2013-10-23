@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 
 
 @NamedQueries({
-	@NamedQuery(name = "getAllLists", query = " SELECT m FROM MovieList m WHERE m.userId =:userId")
-	
+	@NamedQuery(name = "getAllLists", query = " SELECT m FROM MovieList m WHERE m.userId =:userId"),
+	@NamedQuery(name = "deleteList", query = "DELETE FROM MovieList where listId = :listId")
 })
 
 

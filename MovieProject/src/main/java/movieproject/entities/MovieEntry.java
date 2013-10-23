@@ -22,8 +22,9 @@ import org.springframework.stereotype.Component;
  */
 
 @NamedQueries({
-	@NamedQuery(name = "getMovieListById", query = " SELECT m FROM MovieEntry m WHERE m.listId =:listId")
-	
+	@NamedQuery(name = "getMovieListById", query = " SELECT m FROM MovieEntry m WHERE m.listId =:listId"),
+	@NamedQuery(name = "deleteMovie", query = "DELETE FROM MovieEntry m WHERE m.entryId =:entryId"),
+	@NamedQuery(name = "deleteAllMovies", query = "DELETE FROM MovieEntry WHERE listId =:listId")
 })
 
 @Entity
@@ -45,12 +46,12 @@ public class MovieEntry implements Serializable{
 	private String movieName;
 	
 	@Column(name = "imdbId")
-	private long imdbId;
+	private String imdbId;
 	
 	@Column(name = "dateAdded")
 	private Date dateAdded;
 	
-	public MovieEntry(long listId, String movieName, long imdbId, Date dateAdded){
+	public MovieEntry(long listId, String movieName, String imdbId, Date dateAdded){
 		this.entryId = entryId;
 		this.listId = listId;
 		this.imdbId = imdbId;
@@ -78,10 +79,10 @@ public class MovieEntry implements Serializable{
 	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
-	public long getImdbId() {
+	public String getImdbId() {
 		return imdbId;
 	}
-	public void setImdbId(long imdbId) {
+	public void setImdbId(String imdbId) {
 		this.imdbId = imdbId;
 	}
 	public Date getDateAdded() {

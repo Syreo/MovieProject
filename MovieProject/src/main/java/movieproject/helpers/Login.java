@@ -3,8 +3,12 @@ package movieproject.helpers;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Query;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+
+
 
 
 
@@ -14,7 +18,14 @@ import movieproject.response.Response;
 import movieproject.utilities.ResponseFactory;
 
 
+
+
+import movieproject.utilities.UserFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 

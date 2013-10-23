@@ -41,7 +41,11 @@ public class MovieDao {
 		
 		return response;
 	}
-	
+	/**
+	 * persists a movie entry
+	 * @param mEntry
+	 * @return
+	 */
 	@Transactional
 	public Response persistMovieEntry(MovieEntry mEntry){
 		Response response = rFactory.getResponse();
@@ -54,7 +58,11 @@ public class MovieDao {
 		
 		return response;
 	}
-	
+	/**
+	 * gets a movie list by list id
+	 * @param listId
+	 * @return
+	 */
 	@Transactional
 	public Response getMovieListById(long listId){
 		Response response = rFactory.getResponse();
@@ -69,7 +77,11 @@ public class MovieDao {
 		
 		return response;
 	}
-	
+	/**
+	 * gets all lists for a user
+	 * @param userId
+	 * @return
+	 */
 	@Transactional
 	public Response getAllLists(long userId){
 		Response response = rFactory.getResponse();
@@ -81,8 +93,31 @@ public class MovieDao {
 		movieList = query.getResultList();
 		
 		response.setResponse(movieList);
-		
-		
+
+		return response;
+	}
+	
+	@Transactional
+	public Response deleteMovie(long entryId){
+		Response response = rFactory.getResponse();	
+	
+		Query query = em.createNamedQuery("deleteMovie");
+		query.setParameter("entryId", entryId);
+
+		response.setResponse(query.executeUpdate());
+		return response;
+	}
+	
+	@Transactional
+	public Response deleteList(long listId){
+		Response response = rFactory.getResponse();	
+		Query query = em.createNamedQuery("deleteAllMovies");
+		query.setParameter("listId", listId);
+		query.executeUpdate();
+		Query secondQuery = em.createNamedQuery("deleteList");
+		secondQuery.setParameter("listId", listId);
+		int deletedList = secondQuery.executeUpdate();
+		response.setResponse(deletedList);
 		return response;
 	}
 	

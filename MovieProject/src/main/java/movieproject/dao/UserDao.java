@@ -12,7 +12,11 @@ import movieproject.entities.User;
 import movieproject.response.Response;
 import movieproject.utilities.ProfileFactory;
 import movieproject.utilities.ResponseFactory;
+import movieproject.utilities.UserFactory;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 /**
@@ -21,10 +25,11 @@ import org.springframework.transaction.annotation.Transactional;
  *
  */
 @Component
-public class UserDao {
+public class UserDao{
 
 	private ResponseFactory responseFactory = new ResponseFactory();
 	private ProfileFactory pFactory = new ProfileFactory();
+	private UserFactory uFactory = new UserFactory();
 	private static final String SUCCESS = "SUCCESS";
 	@PersistenceContext(unitName = "MovieProjectPU")
 	private EntityManager em;
@@ -135,6 +140,14 @@ public class UserDao {
 		
 		return (String) query.getSingleResult();
 	}
+
+@Transactional
+public User getUser(int userId){
+	User user = uFactory.getUser();
+	
+//	Query query = em.
+	return user;
+}
 	
 
 	
