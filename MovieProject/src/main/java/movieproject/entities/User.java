@@ -68,6 +68,8 @@ public class User implements Serializable {
 	@Column(name = "userJoinDate")
 	private String userJoinDate;
 	
+	@Column(name = "userRole")
+	private int userRole;
 
 /**
  * Constructor
@@ -78,7 +80,7 @@ public class User implements Serializable {
  * @param email
  */
 	public User(final String firstName, final String lastName,
-			final String userName, final String password, String email, String userJoinDate) {
+			final String userName, final String password, String email, String userJoinDate, int userRole) {
 		this.firstName = firstName.substring(0, 1).toUpperCase()
 				+ firstName.substring(1);
 		this.lastName = lastName.substring(0, 1).toUpperCase()
@@ -87,9 +89,21 @@ public class User implements Serializable {
 		this.password = password;
 		this.email = email;
 		this.userJoinDate =  userJoinDate;
-
+		this.userRole = userRole;
 	}
 	
+
+
+	public int getUserRole() {
+	return userRole;
+}
+
+
+
+public void setUserRole(int userRole) {
+	this.userRole = userRole;
+}
+
 
 
 	/**

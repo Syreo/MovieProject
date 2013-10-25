@@ -47,6 +47,7 @@ public class Registration {
 			Response response = responseFactory.getResponse();
 			response = new Response();
 			RegEx regEx = new RegEx();
+			int userRole = 2;
 			String userNameTakenError = "The username you have chosen is already in use! Please try again with a different username.";
 			String emptyInputError = "Please fill out all fields before submitting!";
 			
@@ -103,7 +104,7 @@ public class Registration {
 			if (temp == null) {
 
 				User user = userFactory.getUser();
-				user = new User(firstName, lastName, userName, password, email, userJoinDate);
+				user = new User(firstName, lastName, userName, password, email, userJoinDate, userRole);
 
 				userDao.persist(user);
 				

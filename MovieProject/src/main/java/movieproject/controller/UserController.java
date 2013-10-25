@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 
 
 
+
 import movieproject.dao.UserDao;
 import movieproject.entities.User;
 import movieproject.helpers.Login;
@@ -22,6 +23,7 @@ import movieproject.helpers.Registration;
 import movieproject.helpers.UserProfile;
 import movieproject.response.Response;
 import movieproject.utilities.ResponseFactory;
+import movieproject.utilities.UserFactory;
 
 import org.hibernate.Hibernate;
 import org.joda.time.DateTime;
@@ -59,19 +61,27 @@ public class UserController {
 	private UserProfile userProfile;
 
 	private ResponseFactory responseFactory = new ResponseFactory();
-
+	private UserFactory uFactory = new UserFactory();
 	/**
 	 * Retrives user information for login.
 	 * 
 	 */
-	@RequestMapping(value = "/UserRetrieve", produces = "application/json", method = RequestMethod.POST)
+	@RequestMapping(value = "/loginTest", produces = "application/json", method = RequestMethod.POST)
 	@ResponseBody
-	public Response retrieve(final HttpServletRequest request, final Model model) {
-
+	public String retrieve(final HttpServletRequest request, final Model model) {
+		User user = uFactory.getUser();
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
 
-		return login.login(userName, password, request);
+		user = userDao.getAuthenticatedUser();
+		
+		if(user.getUserRole() == 2 || user.getUserRole() == 1){
+			return "main";
+		}
+		
+		return "denied";
+		
+		//return login.login(userName, password, request);
 	}
 
 	/**
@@ -144,12 +154,24 @@ public class UserController {
 	 * 
 	 * returns login page
 	 */
-	@RequestMapping(value = "/Login")
+	@RequestMapping(value = "/login")
 	public String loginPage(final HttpServletRequest request) {
 
-		return "login.jsp";
+		return "login";
+	}
+	
+	@RequestMapping(value = "/common")
+	public String commonPage(final HttpServletRequest request) {
+
+		return "common";
 	}
 
+	@RequestMapping(value = "/denied")
+	public String deniedPage(final HttpServletRequest request) {
+
+		return "denied";
+	}
+	
 	/**
 	 * 
 	 * returns registration page

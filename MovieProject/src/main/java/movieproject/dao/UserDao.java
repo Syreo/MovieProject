@@ -14,6 +14,7 @@ import movieproject.utilities.ProfileFactory;
 import movieproject.utilities.ResponseFactory;
 import movieproject.utilities.UserFactory;
 
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -70,6 +71,15 @@ public class UserDao{
 		em.merge(profile);
 	}
 	
+	
+	public User getAuthenticatedUser() {
+		String name = SecurityContextHolder.getContext().getAuthentication()
+				.getName();
+		User user = uFactory.getUser();
+		
+		user = findByUserName(name);
+		return user;
+	}
 	
 	@Transactional
 	public User findByUserName(String userName) {
