@@ -28,10 +28,14 @@ public class MovieLists {
 	@Autowired
 	private MovieDao movieDao;
 	
+	@Autowired
+	private ResponseFactory rFactory;
+	@Autowired
+	private MovieListFactory mFactory;
+	
 	
 	private MovieLists movieList;
-	private ResponseFactory rFactory = new ResponseFactory();
-	private MovieListFactory mFactory = new MovieListFactory();
+	 
 	private long parsedUserId;
 	private long parsedListId;
 	private static final String MLE001 = "Invalid User ID.";

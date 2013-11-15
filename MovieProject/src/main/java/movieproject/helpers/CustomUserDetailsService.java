@@ -65,11 +65,13 @@ public class CustomUserDetailsService implements UserDetailsService{
 			
 			authList.add(new SimpleGrantedAuthority("ROLE_USER"));
 			System.out.println("role user authlist");
-			if(access.compareTo(1) == 0){
+			if(access.intValue() == 0){
 				System.out.println("comparing access roles");
 			authList.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+			}else if(access.intValue() == 1){
+				authList.add(new SimpleGrantedAuthority("ROLE_USER"));
+				System.out.println("comparing access roles");
 			}
-
 			return authList;
 
 			}

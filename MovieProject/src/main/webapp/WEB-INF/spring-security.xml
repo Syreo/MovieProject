@@ -18,7 +18,7 @@
   <security:form-login
     login-page="/login.html"
     authentication-failure-url="/denied.html"
-    default-target-url="/login.html"/>
+    default-target-url="/welcome.html"/>
     
   <security:logout
     invalidate-session="true"

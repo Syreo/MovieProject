@@ -23,6 +23,12 @@
 			<name>JBoss Public Maven Repository Group</name>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
 		</repository>
+		
+		<repository>
+        <id>spring-roo-repository-snapshot</id>
+        <name>Spring Roo Repository</name>
+        <url>http://spring-roo-repository.springsource.org/snapshot</url>
+    </repository>
 	</repositories>
 	<dependencies>
 	<!-- Java Mail API -->
@@ -31,6 +37,8 @@
 	    <artifactId>mail</artifactId>
 	    <version>1.4.3</version>
     </dependency>
+    
+
     <dependency>
 	<groupId>org.apache.commons</groupId>
 	<artifactId>commons-io</artifactId>
@@ -315,6 +323,7 @@
 	<artifactId>commons-codec</artifactId>
 	<version>1.4</version>
 </dependency>
+
 	</dependencies>
 	<build>
 		<finalName>MovieProject</finalName>

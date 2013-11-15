@@ -62,27 +62,7 @@ public class UserController {
 
 	private ResponseFactory responseFactory = new ResponseFactory();
 	private UserFactory uFactory = new UserFactory();
-	/**
-	 * Retrives user information for login.
-	 * 
-	 */
-	@RequestMapping(value = "/loginTest", produces = "application/json", method = RequestMethod.POST)
-	@ResponseBody
-	public String retrieve(final HttpServletRequest request, final Model model) {
-		User user = uFactory.getUser();
-		String userName = request.getParameter("userName");
-		String password = request.getParameter("password");
 
-		user = userDao.getAuthenticatedUser();
-		
-		if(user.getUserRole() == 2 || user.getUserRole() == 1){
-			return "main";
-		}
-		
-		return "denied";
-		
-		//return login.login(userName, password, request);
-	}
 
 	/**
 	 * Persists user for registration.
@@ -144,10 +124,10 @@ public class UserController {
 	 * returns to Welcome page
 	 */
 
-	@RequestMapping(value = "/Welcome")
+	@RequestMapping(value = "/welcome")
 	public String displayWelcomePage() {
 
-		return "welcome.jsp";
+		return "welcome";
 	}
 
 	/**
@@ -172,6 +152,12 @@ public class UserController {
 		return "denied";
 	}
 	
+	@RequestMapping(value = "/main")
+	public String mainPage(final HttpServletRequest request) {
+
+		return "welcome";
+	}
+	
 	/**
 	 * 
 	 * returns registration page
@@ -187,85 +173,8 @@ public class UserController {
 		return "waiting.jsp";
 	}
 
-	/**
-	 * returns to LandingPage
-	 * 
-	 * @param request
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "/LandingPage")
-	public String mainPage(final HttpServletRequest request) {
-
-		return "landingPage.jsp";
-
-	}
-
-	@RequestMapping(value = "/PostPage")
-	public String postPage(final HttpServletRequest request) {
-		return "postPage.jsp";
-	}
-
-	/**
-	 * mapping for ViewPublicEntries.jsp page.
-	 * 
-	 * @param request
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "/ViewPublicEntries")
-	public String publicEntries(final HttpServletRequest request) {
-		return "viewPublicEntries.jsp";
-	}
-
-	/**
-	 * invalidates session and returns user to Welcome page.
-	 * 
-	 * @param request
-	 * @param model
-	 * @return
-	 */
-
-	@RequestMapping(value = "/About")
-	public String about(final HttpServletRequest request) {
-		return "about.jsp";
-	}
-
-	@RequestMapping(value = "/Inbox")
-	public String inbox(final HttpServletRequest request) {
-		return "inbox.jsp";
-	}
-
-	@RequestMapping(value = "/SendMessagePage")
-	public String sendMessagePage(final HttpServletRequest request) {
-		return "sendMessage.jsp";
-	}
-
-	@RequestMapping(value = "/ReadMessage")
-	public String readMessage(final HttpServletRequest request) {
-		return "readMessage.jsp";
-	}
-
-	@RequestMapping(value = "/Logout", produces = "application/json", method = RequestMethod.POST)
-	@ResponseBody
-	public Response logout(final HttpServletRequest request) {
-		Response response = responseFactory.getResponse();
-		response = new Response();
-		try {
-			request.getSession().invalidate();
-		} catch (Exception e) {
-			response.setError(INVALIDATE_ERROR);
-		}
-		response.setSuccess("Success");
-		return response;
-	}
 
 
-	@RequestMapping(value = "/ViewMessage")
-	public String viewMessage(HttpServletRequest request) {
-
-		return "viewMessage.jsp";
-	}
 	
 	/**
 	 * testing purposes
@@ -276,32 +185,6 @@ public class UserController {
 		this.userDao = userDao;
 	}
 
-	/**
-	 * Gets a list of all users from the database.
-	 * 
-	 * @param request
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "/GetAllUsers", produces = "application/json", method = RequestMethod.POST)
-	@ResponseBody
-	public List<User> allUsers(final HttpServletRequest request) {
-		return userDao.getAllUsers();
-	}
 
-	/**
-	 * @return the register
-	 */
-	public Registration getRegister() {
-		return register;
-	}
-
-	/**
-	 * @param register
-	 *            the register to set
-	 */
-	public void setRegister(Registration register) {
-		this.register = register;
-	}
 
 }
